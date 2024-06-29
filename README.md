@@ -1,5 +1,7 @@
-# pnpm-with-libvips
+# PNPM with libvips
 A docker image contains [PNPM](https://pnpm.io/) and [libvips](https://github.com/libvips/libvips) library to install [sharp](https://www.npmjs.com/package/sharp) package
+
+All built images can be found here https://hub.docker.com/r/ngoctp/pnpm-with-libvips/tags
 
 ### Example commands to build and push
 ```bash
