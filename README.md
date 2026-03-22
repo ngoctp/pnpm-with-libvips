@@ -7,5 +7,5 @@ All built images can be found here https://hub.docker.com/r/ngoctp/pnpm-with-lib
 ```bash
 docker buildx create --use --platform=linux/arm64,linux/amd64 --name multi-platform-builder
 
-docker buildx build --push --platform linux/arm64,linux/amd64 --build-arg NODE_VERSION=18-slim --build-arg PNPM_VERSION=8.15.8 -t ngoctp/pnpm-with-libvips:8.15.8-node18 .
+docker buildx build --push --platform linux/arm64,linux/amd64 --build-arg NODE_VERSION=24-slim --build-arg PNPM_VERSION=10.17.1 -t ngoctp/pnpm-with-libvips-playwright:10.17.1-node24 .
 ```
