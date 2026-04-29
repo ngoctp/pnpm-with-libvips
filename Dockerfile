@@ -6,8 +6,7 @@ ARG PNPM_VERSION="10.17.1"
 # Install necessary dependencies for Sharp
 RUN apt-get update && \
     apt-get install -y \
-    libvips-dev && \
-    chromium && \
+    libvips-dev chromium && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/*
 
