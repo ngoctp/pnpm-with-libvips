@@ -7,12 +7,14 @@ ARG PNPM_VERSION="10.17.1"
 RUN apt-get update && \
     apt-get install -y \
     libvips-dev && \
+    chromium && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/*
 
 ENV SHELL=/bin/bash
 ENV PNPM_HOME=/root/.local/share/pnpm
 ENV PATH=${PNPM_HOME}:${PATH}
+ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
 
 # Install PNPM
 RUN npm install -g pnpm@${PNPM_VERSION}
